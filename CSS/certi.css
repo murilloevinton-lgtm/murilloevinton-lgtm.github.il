@@ -1,0 +1,184 @@
+/* =========================
+   CERTIFICACIONES
+   ========================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #807d7d;
+}
+
+header {
+    width: 100%;
+    min-height: 120px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    width: 280px;
+}
+
+.logo span {
+    display: block;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #9b7c1d;
+}
+
+.contenedor-certificaciones {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.contenedor-certificaciones h1 {
+    color: #eabd2b;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.texto-certificaciones {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ededed;
+}
+
+.certificaciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.certificacion {
+    background-color: #292929;
+    padding: 30px;
+    border: 1px solid #555;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.certificacion:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.icono-certificacion {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.certificacion h2 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.certificacion p {
+    color: #e4e4e4;
+    line-height: 1.6;
+}
+
+.certificacion span {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #d4af37;
+    color: #191919;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .certificaciones {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-certificaciones h1 {
+        font-size: 32px;
+    }
+
+}
+
+/* =========================
+   PÁGINA COMPLETA
+========================= */
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* EL CONTENIDO OCUPA EL ESPACIO */
+
+main {
+    flex: 1;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.pie-principal {
+    width: 100%;
+    background-color: #191919;
+    color: rgb(150, 139, 84);
+    padding: 25px 50px;
+    text-align: center;
+    margin-top: auto;
+}

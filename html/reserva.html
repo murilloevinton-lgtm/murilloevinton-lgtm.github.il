@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/formu.css">
+</head>
+
+<!-- ENCABEZADO -->
+<header>
+
+    <div class="logo">
+        <span>BARBER</span>
+        <span>SHEIN</span>
+    </div>
+
+    <nav class="navbar">
+
+        <ul class="menu">
+
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="Mitabla.html">Citas</a>
+            </li>
+
+            <li>
+                <a href="certificacion.html">Certificaciones</a>
+            </li>
+
+            <li>
+                <a href="refere.html">Referencias</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+</header>
+
+<form action="Mitabla.html" class="post">
+
+    <h1>Reserva tu cita</h1>
+
+    <p>
+        Elige el servicio que deseas y agenda tu cita
+        en Barber Shein.
+    </p>
+    <label class="nombre">
+        Nombre completo:
+    </label>
+
+    <input type="text" id="nombre" name="nombre">
+
+    <br><br>
+
+    <label class="Telefono">
+        Telefono:
+    </label>
+
+    <input type="Tel" id="Telefono" name="Telefono">
+
+    <br><br>
+
+    <label class="fecha de reserva">
+        Fecha de reserva
+    </label>
+    <input type="date" id="fecha_de_reserva" name="fecha_de_reserva">
+    <br><br>
+
+
+    <!-- GÉNERO -->
+    <label class="hora">
+        Hora:
+    </label>
+    <input type="time" id="hora" name="hora">
+
+    <fieldset>
+
+        <label class="opciones">
+            Tipo de corte:
+        </label>
+
+        <select id="opciones" name="estilo">
+
+            <option value="">
+                -- Selecciona una opción --
+            </option>
+
+            <option value="Clásico">
+                Clásico
+            </option>
+
+            <option value="Low Fade">
+                Low Fade
+            </option>
+
+            <option value="Mid Fade">
+                Mid Fade
+            </option>
+
+            <option value="High Fade">
+                High Fade
+            </option>
+
+            <option value="taper">
+                Taper
+            </option>
+
+            <option value="Buzz Cut">
+                Buzz Cut
+            </option>
+
+            <option value="texturizado">
+                Texturizado
+            </option>
+
+            <option value="Corte César">
+                Corte César
+            </option>
+
+            <option value="Mullet">
+                Mullet
+            </option>
+
+            <option value="Crop">
+                Crop
+            </option>
+
+            <option value="Mohicano">
+                Mohicano
+            </option>
+
+            <option value="Undercut">
+                Undercut
+            </option>
+
+            <option value="Corte con diseño">
+                Corte con diseño
+            </option>
+        </select>
+
+        <br><br>
+
+
+        <!-- SERVICIO -->
+
+        <fieldset>
+
+            <legend>
+                Lo que más te gusta de nuestro servicio:
+            </legend>
+
+            <input type="checkbox" id="experiencia" name="intereses" value="experiencia">
+
+            <label for="experiencia">
+                La experiencia
+            </label>
+
+
+            <input type="checkbox" id="corte" name="intereses" value="corte">
+
+            <label for="corte">
+                El corte
+            </label>
+
+
+            <input type="checkbox" id="entretenimiento" name="intereses" value="entretenimiento">
+
+            <label for="entretenimiento">
+                El entretenimiento
+            </label>
+
+        </fieldset>
+
+        <button type="submit">
+            Enviar
+        </button>
+        </main>
+    </fieldset>
+</form>
+
+
+<hr>
+
+</html>

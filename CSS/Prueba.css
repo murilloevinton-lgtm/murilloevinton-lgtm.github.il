@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #6f6f6b;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* =========================
+   CABECERA
+========================= */
+
+header {
+    width: 100%;
+    min-height: 120px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    width: 280px;
+}
+
+.logo span {
+    display: block;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+.navbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #d6b45a;
+}
+
+.menu img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+/* =========================
+   BOTÓN RESERVAR
+========================= */
+
+.book {
+    margin-left: 20px;
+}
+
+.btn-reserva {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-reserva:hover {
+    background: white;
+    color: #191919;
+    transform: scale(1.05);
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.contenido-principal {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* =========================
+   ARTÍCULOS
+========================= */
+
+article {
+    background: #53514c;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #817445;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+article h1 {
+    margin-bottom: 10px;
+    color: #e0d4a3;
+    font-size: 24px;
+    text-align: center;
+}
+
+article h2 {
+    margin-top: 0;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+time {
+    display: block;
+    margin: 15px 0;
+    color: #d6b45a;
+    text-align: center;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+small {
+    color: #e1d39a;
+}
+
+strong {
+    color: #d6b45a;
+}
+
+article img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 20px auto;
+}
+
+.pie-articulo {
+    padding: 15px;
+    background: #191919;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.pie-articulo p {
+    margin: 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    text-align: center;
+}
+
+address {
+    margin-top: 20px;
+    text-align: center;
+    font-style: normal;
+}
+
+address a {
+    color: #d6b45a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+address a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* =========================
+   COLUMNA LATERAL (ASIDE)
+========================= */
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjeta-aside {
+    background: #53514c;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #817445;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-aside a {
+    color: #d6b45a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta-aside a:hover {
+    color: white;
+}
+
+.tarjeta-aside img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.seccion-formulario {
+    background: #53514c;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #817445;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.seccion-formulario h2 {
+    color: #e0d4a3;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #e0d4a3;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #817445;
+    background: #2a2a2a;
+    color: white;
+    font-size: 15px;
+}
+
+.grupo-fieldset {
+    border: 1px solid #817445;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grupo-fieldset legend {
+    color: #e0d4a3;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.botones-form {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit {
+    background: #d6b45a;
+    color: #191919;
+}
+
+.btn-submit:hover {
+    background: white;
+}
+
+.btn-reset {
+    background: #333;
+    color: white;
+}
+
+.btn-reset:hover {
+    background: #444;
+}
+
+/* =========================
+   PIE DE PÁGINA GLOBAL
+========================= */
+
+.pie-principal {
+    background: #191919;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.pie-principal p {
+    margin: 5px 0;
+    color: #d0d0d0;
+}
+
+/* =========================
+   RESPONSIVE (MOVIL)
+========================= */
+
+@media (max-width: 850px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book {
+        margin-left: 0;
+    }
+}

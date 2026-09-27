@@ -1,0 +1,393 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8d8888;
+}
+
+.encabezado-citas {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.encabezado-citas h1 {
+    font-size: 42px;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #76746b;
+}
+
+.encabezado-citas p {
+    font-size: 18px;
+    color: #817e7e;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    min-height: 120px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 280px;
+}
+
+.logo span {
+    display: block;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+.navbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #e5e5e5;
+}
+
+
+/* LOGO PEQUEÑO DEL MENÚ */
+
+.menu img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+
+/* =========================
+   BOTÓN RESERVA
+========================= */
+
+.book {
+    margin-left: 20px;
+}
+
+.btn-reserva {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #d4af37;
+    border-radius: 30px;
+    background-color: #d4af37;
+    color: #191919;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-reserva:hover {
+    background: #191919;
+    color: #d4af37;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   ENCABEZADO DE CITAS
+========================= */
+
+.encabezado-citas {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.encabezado-citas h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #5a502f;
+}
+
+.encabezado-citas p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #5a502f;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+form {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background-color: #464444;
+    border: 1px solid #585555;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #c7af65;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #292929;
+    color: #e4dcdc;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* =========================
+   EFECTO CAMPOS
+========================= */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #edd073;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+}
+
+
+/* =========================
+   FIELDSET
+========================= */
+
+fieldset {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   TIPO DE CORTE
+========================= */
+
+.opciones {
+    color: #dbc16c;
+}
+
+
+/* =========================
+   SEGUNDO FIELDSET
+========================= */
+
+fieldset fieldset {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   LEGEND
+========================= */
+
+legend {
+    padding: 0 10px;
+    color: #cdb771;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #e5b92a;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #d0d0d0;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   CHECKBOX
+========================= */
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #6b5d2f;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+/* =========================
+   LABEL CHECKBOX
+========================= */
+
+fieldset label {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   BOTÓN FORMULARIO
+========================= */
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d4af37;
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #6a6868;
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   LÍNEA
+========================= */
+
+hr {
+    margin-top: 40px;
+    border: none;
+    border-top: 1px solid #444;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form {
+        width: 95%;
+        padding: 20px;
+    }
+
+    fieldset label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
